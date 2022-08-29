@@ -1,0 +1,55 @@
+.sidebar {
+  flex: 0.45;
+  height: 100vh;
+  min-width: 300px;
+  max-width: 350px;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    display: none !important;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &__header {
+    @include flex(space-between, center, null);
+    position: sticky;
+    top: 0;
+    background-color: $color--white;
+    z-index: 1;
+    padding: 43.4px 20px;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+  }
+  &__avatar {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__search {
+    @include flex(null, center, null);
+    padding: 2rem;
+    border-radius: 0.2rem;
+
+    input {
+      outline-width: 0;
+      border: none;
+      flex: 1;
+    }
+  }
+  &__button {
+    width: 100%;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-left: 0;
+    border-right: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.chat {
+  @include flex(null, center, null);
+  cursor: pointer;
+  padding: 10px;
+  word-break: break-all;
+
+  &__avatar {
+    margin: 5px 20px;
+    color: #379240 !important;
+  }
+
+  &:hover {
+    background-color: $color--gray;
+  }
+}

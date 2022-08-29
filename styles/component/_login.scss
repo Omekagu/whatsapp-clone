@@ -1,0 +1,19 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: $color--gray;
+
+  &__container {
+    padding: 7rem 4rem;
+    @include flex(null, center, column);
+    background-color: $color--white;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 14px -3px rgba($color: #000000, $alpha: 1);
+  }
+  &__btn {
+    margin-top: 5rem !important;
+    background-color: $color--gray;
+  }
+}

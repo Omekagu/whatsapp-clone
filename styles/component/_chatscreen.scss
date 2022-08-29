@@ -1,0 +1,56 @@
+.chatscreen {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__header {
+    @include flex(null, center, null);
+    position: sticky;
+    background-color: $color--white;
+    z-index: 100;
+    top: 0;
+    padding: 11px;
+    height: 88px;
+    border-bottom: 1px solid whitesmoke;
+  }
+  &__info {
+    margin-left: 15px;
+    flex: 1;
+
+    h3 {
+      text-transform: capitalize;
+      margin-bottom: 3px;
+    }
+    p {
+      font-size: 14px;
+      color: $color--gray;
+    }
+  }
+  &__message {
+    padding: 30px;
+    background-color: #e5ded8;
+    min-height: 90vh;
+  }
+  &__input {
+    @include flex(null, center, null);
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    background-color: $color--white;
+    z-index: 100;
+
+    input {
+      flex: 1;
+      align-items: center;
+      padding: 10px;
+      position: sticky;
+      bottom: 0;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      margin: 0px 15px;
+    }
+  }
+  &__endOfMessage {
+    margin-bottom: 50px;
+  }
+}

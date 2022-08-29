@@ -1,0 +1,11 @@
+.chatpage {
+  @include flex(null, null, null);
+
+  &__container {
+    flex: 1;
+    overflow: scroll;
+    height: 100vh;
+
+    scrollbar-width: none;
+  }
+}
