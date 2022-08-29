@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Head from 'next/head';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import ChatScreen from '../../Components/ChatScreen';
